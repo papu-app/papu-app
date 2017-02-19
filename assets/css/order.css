@@ -1,0 +1,82 @@
+.info-left {
+    float: left;
+    width: 70%;
+    font-size: 1.6rem;
+}
+
+.dish-name {
+    margin-bottom: 2rem;
+}
+
+.info-right {
+    float: right;
+}
+
+.info-left > p {
+    margin-bottom: 3rem;
+}
+
+.quantity {
+    margin-top: 3rem;
+    position: relative;
+    z-index: 999;
+    text-align: center;
+}
+
+.dish {
+    background: url(../img/pizza-2000602_1920.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.gradient-top {
+    padding: 5vw;
+    background: rgba(0, 0, 0, 1);
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(255, 146, 10, 0) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(255, 146, 10, 0)));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(255, 146, 10, 0) 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(255, 146, 10, 0) 100%);
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(255, 146, 10, 0) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(255, 146, 10, 0) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ff920a', GradientType=0);
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+    .dish {
+        background: url(../img/pizza-2000602_1920@2x.jpg);
+    }
+    ;
+}
+
+@media (-webkit-min-device-pixel-ratio: 3) {
+    .dish {
+        background: url(../img/pizza-2000602_1920@3x.jpg);
+    }
+    ;
+}
+
+.button-section {
+    width: 100hv;
+    position: relative;
+    bottom: -4rem;
+    clear: both;
+}
+
+.small {
+    border: none;
+    width: 100px;
+    height: 100px;
+    margin: 1rem;
+}
+
+.minus {
+    background: url(../img/minus.svg);
+}
+
+.plus {
+    background: url(../img/plus.svg);
+}
+
+.number {
+    font-size: 2.4rem;
+}
