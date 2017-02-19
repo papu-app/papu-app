@@ -8,7 +8,7 @@
 }
 
 .order-details {
-    width: 60%;
+    width: 70%;
     font-size: 1.3rem;
     margin-left: 30%;
 }
@@ -19,7 +19,7 @@
 }
 
 .order-details p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 2rem;
 }
 
@@ -27,9 +27,9 @@
     float: right;
     text-align: right;
     width: 100%;
-    font-size: 1.4rem;
-    padding: 1.2rem;
+    font-size: 1.6rem;
     box-sizing: border-box;
+    margin: 2rem auto;
 }
 
 .checkbox {
@@ -66,7 +66,7 @@
 }
 
 .checkbox1 label {
-    font-size: 14px;
+    font-size: 1.2rem;
 }
 
 .checkbox-remember:checked + .checkbox-remember-label:before {
@@ -91,4 +91,52 @@
 
 .short {
     width: 48%;
+}
+
+.details-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.details-left {
+    display: inline-block;
+    width: 50%;
+}
+
+.details-right {
+    display: inline-block;
+    /*    display: flex;
+flex-direction: row;*/
+    width: 40%;
+}
+
+.quantity {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.small {
+    border: none;
+    width: 80px;
+    height: 80px;
+}
+
+.minus {
+    background: url(../img/minus.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.plus {
+    background: url(../img/plus.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.quantity p {
+    margin: 0 0.7rem;
 }
