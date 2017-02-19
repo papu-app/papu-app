@@ -1,0 +1,94 @@
+.dish-bg {
+    background: url();
+    padding: 1rem;
+    width: 100%;
+    background: #060;
+    box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.35);
+    box-sizing: border-box;
+}
+
+.order-details {
+    width: 60%;
+    font-size: 1.3rem;
+    margin-left: 30%;
+}
+
+.order-details,
+.content span {
+    font-size: 1.4rem;
+}
+
+.order-details p {
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.sum {
+    float: right;
+    text-align: right;
+    width: 100%;
+    font-size: 1.4rem;
+    padding: 1.2rem;
+    box-sizing: border-box;
+}
+
+.checkbox {
+    margin-top: 2rem;
+}
+
+.checkbox-remember {
+    opacity: 0;
+}
+
+.checkbox-remember,
+.checkbox-remember-label {
+    display: hidden;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.checkbox-remember-label {
+    position: relative;
+}
+
+.checkbox-remember + .checkbox-remember-label:before {
+    content: '';
+    background: #000;
+    border: 3px solid #fff;
+    border-radius: 30%;
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.checkbox1 label {
+    font-size: 14px;
+}
+
+.checkbox-remember:checked + .checkbox-remember-label:before {
+    content: "\2713";
+    background: #000;
+    color: #ffe062;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 1rem;
+}
+
+.checkbox-remember:focus + .checkbox-remember-label {
+    outline: 0px;
+}
+
+.mini-button-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2.4rem;
+}
+
+.short {
+    width: 48%;
+}

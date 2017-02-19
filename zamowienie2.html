@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Papu</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/zamowienie.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+</head>
+
+<body>
+    <section class="bar">
+        <div class="bar-top">
+            <input type="checkbox" id="navigation" />
+            <label class="navi" for="navigation">
+                <img src="assets/img/burger-menu.svg" alt="Menu" class="menu" />
+            </label>
+            <nav>
+                <div class="profile">
+                    <img src="assets/img/ania.jpg" alt="fotografia profilowa" class="img-circle" />
+                    <div class="profile-data">
+                        <div><span class="name">Anna Piskorz</span></div>
+                        <div>anna.piskorz@outlook.com</div>
+                    </div>
+                </div>
+                <ul>
+                    <a href="">
+                        <li>
+                            Szukaj potrawy
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            Moje zamówienia
+                            <div class="rating-mini">3</div>
+                        </li>
+                    </a>
+                    <a href="">
+                        <li>
+                            Mój profil
+                        </li>
+                    </a>
+                    <a href="">
+                        <li>
+                            Ulubione
+                            <div class="rating-mini">10</div>
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+            <img src="assets/img/logo_papu.svg" alt="Papu" class="logo" />
+        </div>
+        <div class="bar-bottom">
+            <img src="assets/img/arrow-left.svg" alt="Wstecz" class="arrow-left" />
+            <span class="title">Aioli</span>
+        </div>
+    </section>
+    <section>
+        <div class="dish-bg">
+            <div class="order-details">
+                <span class="name">Vege pizza</span> / 370g
+                <p>mozzarella, pesto bazyliowe, szpinak, dynia karmelizowana, jajko, ser feta</p>
+                <p>1 x 29,90 zł = 29,90 zł</p>
+            </div>
+        </div>
+        <div class="sum">SUMA:<span> 29,90zł</span></div>
+    </section>
+    <section class="content">
+        <span>Dane dostawy</span>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Imię">
+            <input type="text" class="form-control" placeholder="Nazwisko">
+            <input type="text" class="form-control" placeholder="Ulica">
+            <input type="text" class="form-control" placeholder="Miasto">
+            <input type="text" class="form-control" placeholder="Kod pocztowy">
+            <div class="checkbox1">
+                <input id="remember" class="checkbox-remember" name="checkbox-1" type="checkbox">
+                <label for="remember" class="checkbox-remember-label">Zapamiętaj moje dane
+                </label>
+            </div>
+            <div>
+                <div class="mini-button-section">
+                    <button class="short button button-black">Anuluj</button>
+                    <button class="short button button-yellow">Zamawiam</button>
+                </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="assets/js/ordering.js"></script>
+</body>
+
+</html>
