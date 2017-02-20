@@ -1,3 +1,8 @@
+/* IMPORT STYLESHEETS */
+@import "rs.css";
+
+
+/* STYLE */
 html {
     font-size: 160%;
 }
