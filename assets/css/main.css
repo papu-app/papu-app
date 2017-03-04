@@ -19,7 +19,7 @@ body {
     color: #ffe062;
 }
 
-.bar-top {
+div.bar-top {
     position: relative;
     background-color: rgba(255, 255, 255, 0.25);
     height: 16vh;
@@ -32,7 +32,7 @@ body {
     z-index: 999;
 }
 
-.bar-bottom {
+div.bar-bottom {
     background-color: rgba(255, 255, 255, 0.15);
     color: #ffe062;
     height: 5.7vh;
@@ -45,22 +45,18 @@ body {
     align-items: center;
 }
 
-.logo {
+img.logo {
     height: 60%;
     margin: auto;
 }
 
-.arrow-left {
-    height: 6vh;
+img.arrow-left {
+    height: 5%;
     cursor: pointer;
     position: absolute;
 }
 
-.arrow {
-    height: 6vh;
-}
-
-.menu {
+img.menu {
     height: 7vh;
     margin: 0;
     cursor: pointer;
@@ -68,11 +64,100 @@ body {
     z-index: 999;
 }
 
+
+/* animacja hamburgera */
+
+div.menu {
+    width: 70px;
+    height: 51px;
+    position: relative;
+    margin: 1rem auto;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+div.menu span {
+    display: block;
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    background: #ffe062;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+div.menu span:nth-child(1) {
+    top: 0px;
+}
+
+div.menu span:nth-child(2) {
+    top: 20px;
+}
+
+div.menu span:nth-child(3) {
+    top: 41px;
+}
+
+div.menu.open span:nth-child(1) {
+    top: 18px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+div.menu.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+}
+
+div.menu.open span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+
+/* koniec animacji hamburgera */
+
 span.title {
     margin: auto;
     text-transform: uppercase;
     font-size: 1.9rem;
     font-weight: 500;
+}
+
+@media only screen and (orientation: landscape) {
+    span.title {
+        font-size: 1.3rem;
+    }
+    div.bar-top,
+    div.profile {
+        height: 25vh;
+    }
+    img.menu {
+        height: 15vh;
+    }
+    img.arrow-left {
+        height: 10%;
+    }
 }
 
 .rating {
@@ -150,7 +235,7 @@ section.content {
 
 nav {
     z-index: 100;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 80%;
@@ -159,6 +244,9 @@ nav {
     -webkit-transition: all 200ms ease-in;
     -o-transition: all 200ms ease-in;
     transition: all 200ms ease-in;
+    background-image: url(../img/menu-bg.jpg);
+    background-size: cover;
+    background-repeat: repeat-y;
 }
 
 nav ul {
@@ -166,9 +254,6 @@ nav ul {
     margin: 0;
     list-style: none;
     overflow: hidden;
-    background-image: url(../img/menu-bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 nav li {
@@ -195,9 +280,10 @@ nav a:hover {
 }
 
 .navi {
-    position: fixed;
-    top: 5%;
-    left: 5%;
+    /*position: fixed;
+top: 5%;
+left: 5%;
+*/
     -moz-transition: all 200ms ease-in;
     -webkit-transition: all 200ms ease-in;
     -o-transition: all 200ms ease-in;
@@ -267,7 +353,6 @@ nav a:hover {
 /*----------------typografia--------------------*/
 
 span {
-    font-family: Roboto;
     color: #ffdf62;
     font-size: 2rem;
     font-weight: 700;
