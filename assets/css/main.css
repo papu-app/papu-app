@@ -29,6 +29,7 @@ div.bar-top {
     display: flex;
     flex-direction: row;
     align-items: center;
+    align-content: center;
     z-index: 999;
 }
 
@@ -56,22 +57,14 @@ img.arrow-left {
     position: absolute;
 }
 
-img.menu {
-    height: 7vh;
-    margin: 0;
-    cursor: pointer;
-    left: 5%;
-    z-index: 999;
-}
 
-
-/* animacja hamburgera */
+/* hamburger & animacja hamburgera */
 
 div.menu {
     width: 70px;
     height: 51px;
-    position: relative;
-    margin: 1rem auto;
+    position: absolute;
+    margin: auto auto;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -81,6 +74,7 @@ div.menu {
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     cursor: pointer;
+    z-index: 999999;
 }
 
 div.menu span {
@@ -283,9 +277,9 @@ nav a:hover {
 }
 
 .navi {
-    /*position: fixed;
-top: 5%;
-left: 5%;
+    /*  position: relative;
+  top: 0%;
+  left: 5%;
 */
     -moz-transition: all 200ms ease-in;
     -webkit-transition: all 200ms ease-in;
@@ -294,19 +288,19 @@ left: 5%;
     z-index: 500;
 }
 
-.bar-top input[type="checkbox"] {
+.bar-top {
     display: none;
 }
 
-.bar-top input[type="checkbox"]:checked ~ nav {
+.bar-top nav.active {
     margin: 0;
 }
 
-.bar-top input[type="checkbox"]:checked ~ label {
+.bar-top label.active {
     left: 83%;
 }
 
-.bar-top input[type="checkbox"]:checked ~ section {
+.bar-top section.active {
     -webkit-transform: translate3d(80%, 0, 0);
     -moz-transform: translate3d(80%, 0, 0);
     -o-transform: translate3d(80%, 0, 0);
