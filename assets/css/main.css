@@ -140,17 +140,20 @@ div.menu.open span:nth-child(3) {
 span.title {
     margin: auto;
     text-transform: uppercase;
-    font-size: 1.9rem;
+    font-size: 1.4rem;
     font-weight: 500;
 }
 
 @media only screen and (orientation: landscape) {
     span.title {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
     div.bar-top,
     div.profile {
         height: 25vh;
+    }
+    div.bar-bottom {
+        height: 15vh;
     }
     img.menu {
         height: 15vh;
@@ -339,9 +342,9 @@ left: 5%;
 }
 
 .form-group input[type="text"] {
-    padding: 1rem 0;
+    padding: 1.3rem 0;
     font-family: 'Roboto';
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     width: 100%;
     background-color: transparent;
     border-bottom: 2px solid #fff;

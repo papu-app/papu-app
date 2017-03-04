@@ -1,5 +1,5 @@
 div.dish-bg {
-    background: url(../img/pizza-2x.jpg);
+    background: url(../img/pizza-1x.jpg);
     width: 100%;
     height: 320px;
     box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.35);
@@ -21,7 +21,6 @@ div.dish-bg {
 section.delivery-data {
     display: block;
     margin-top: 0rem;
-    height: calc(78.3vh - 321px - 3.8rem);
     box-sizing: border-box;
     display: flex;
     width: 100%;
@@ -49,7 +48,7 @@ div.order-details {
 
 div.order-details,
 section.delivery-data span {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 div.order-details p {
@@ -62,7 +61,7 @@ div.sum {
     float: right;
     text-align: right;
     font-size: 1.8rem;
-    margin: 1rem;
+    margin: 1.5rem;
 }
 
 
@@ -84,33 +83,36 @@ label.checkbox-remember-data-label {
 }
 
 input.checkbox-remember-data + label.checkbox-remember-data-label:before {
-    content: '';
+    content: ' ';
     background: #000;
     border: 3px solid #fff;
     border-radius: 30%;
     display: inline-block;
     vertical-align: middle;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     padding: 2px;
     margin-right: 10px;
     text-align: center;
 }
 
 div.checkbox1 label {
-    font-size: 1.4rem;
-    margin-top: 0.5rem;
+    font-size: 1.7rem;
+    margin-top: 1rem;
     display: flex;
     align-items: center;
+    color: #fff;
 }
 
 input.checkbox-remember-data:checked + .checkbox-remember-data-label:before {
     content: "\2713";
     background: #000;
     color: #ffe062;
-    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.3rem;
     text-align: center;
-    line-height: 1rem;
 }
 
 input.checkbox-remember-data:focus + .checkbox-remember-data-label {
