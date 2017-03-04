@@ -1,57 +1,89 @@
-.dish-bg {
-    background: url();
-    padding: 1rem;
+div.dish-bg {
+    background: url(../img/pizza-2x.jpg);
     width: 100%;
-    background: #060;
+    height: 320px;
     box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.35);
     box-sizing: border-box;
 }
 
-.order-details {
+@media (-webkit-min-device-pixel-ratio: 2) {
+    .dish-bg {
+        background: url(../img/pizza-2x.jpg);
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 3) {
+    .dish-bg {
+        background: url(../img/pizza-3x.jpg);
+    }
+}
+
+section.delivery-data {
+    display: block;
+    margin-top: 0rem;
+    height: calc(78.3vh - 321px - 3.8rem);
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    padding: 0 5vw 5vh 5vw;
+}
+
+div.gradient-right {
+    padding: 1rem;
+    box-sizing: border-box;
+    height: 321px;
+    background: rgba(255, 93, 177, 0);
+    background: -moz-linear-gradient(left, rgba(255, 93, 177, 0) 0%, rgba(0, 0, 0, 0.39) 21%, rgba(0, 0, 0, 1) 54%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 93, 177, 0)), color-stop(21%, rgba(0, 0, 0, 0.39)), color-stop(54%, rgba(0, 0, 0, 1)));
+    background: -webkit-linear-gradient(left, rgba(255, 93, 177, 0) 0%, rgba(0, 0, 0, 0.39) 21%, rgba(0, 0, 0, 1) 54%);
+    background: -o-linear-gradient(left, rgba(255, 93, 177, 0) 0%, rgba(0, 0, 0, 0.39) 21%, rgba(0, 0, 0, 1) 54%);
+    background: -ms-linear-gradient(left, rgba(255, 93, 177, 0) 0%, rgba(0, 0, 0, 0.39) 21%, rgba(0, 0, 0, 1) 54%);
+    background: linear-gradient(to right, rgba(255, 93, 177, 0) 0%, rgba(0, 0, 0, 0.39) 21%, rgba(0, 0, 0, 1) 54%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ff5db1', endColorstr='#000000', GradientType=1);
+}
+
+div.order-details {
     width: 70%;
-    font-size: 1.3rem;
     margin-left: 30%;
 }
 
-.order-details,
-.content span {
-    font-size: 1.4rem;
+div.order-details,
+section.delivery-data span {
+    font-size: 1.5rem;
 }
 
-.order-details p {
-    font-size: 1.2rem;
+div.order-details p {
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
     line-height: 2rem;
 }
 
-.sum {
+div.sum {
     float: right;
     text-align: right;
-    width: 100%;
-    font-size: 1.6rem;
-    box-sizing: border-box;
-    margin: 2rem auto;
+    font-size: 1.8rem;
+    margin: 1rem;
 }
 
-.checkbox {
-    margin-top: 2rem;
-}
 
-.checkbox-remember {
+/* Checkbox style */
+
+input.checkbox-remember-data {
     opacity: 0;
 }
 
-.checkbox-remember,
-.checkbox-remember-label {
+input.checkbox-remember-data,
+label.checkbox-remember-data-label {
     display: hidden;
     vertical-align: middle;
     cursor: pointer;
 }
 
-.checkbox-remember-label {
+label.checkbox-remember-data-label {
     position: relative;
 }
 
-.checkbox-remember + .checkbox-remember-label:before {
+input.checkbox-remember-data + label.checkbox-remember-data-label:before {
     content: '';
     background: #000;
     border: 3px solid #fff;
@@ -65,11 +97,14 @@
     text-align: center;
 }
 
-.checkbox1 label {
-    font-size: 1.2rem;
+div.checkbox1 label {
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
 }
 
-.checkbox-remember:checked + .checkbox-remember-label:before {
+input.checkbox-remember-data:checked + .checkbox-remember-data-label:before {
     content: "\2713";
     background: #000;
     color: #ffe062;
@@ -78,65 +113,69 @@
     line-height: 1rem;
 }
 
-.checkbox-remember:focus + .checkbox-remember-label {
+input.checkbox-remember-data:focus + .checkbox-remember-data-label {
     outline: 0px;
 }
 
-.mini-button-section {
+
+/* End of checkbox styles */
+
+div.mini-button-section {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 2.4rem;
 }
 
-.short {
-    width: 48%;
-}
 
-.details-bottom {
+/* Quantity x price + quantity button section */
+
+div.details-bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 1.2rem;
     width: 100%;
 }
 
-.details-left {
+div.details-left {
     display: inline-block;
-    width: 50%;
+    width: 55%;
 }
 
-.details-right {
+div.details-left p {
+    margin: 0;
+}
+
+div.details-right {
     display: inline-block;
-    /*    display: flex;
-flex-direction: row;*/
     width: 40%;
 }
 
-.quantity {
+div.quantity {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
 }
 
-.small {
+button.small {
     border: none;
     width: 80px;
     height: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.minus {
+button.minus {
     background: url(../img/minus.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
-.plus {
+button.plus {
     background: url(../img/plus.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
-.quantity p {
+div.quantity p {
     margin: 0 0.7rem;
+    font-size: 2rem;
 }

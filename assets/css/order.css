@@ -18,13 +18,15 @@
     margin-bottom: 3rem;
 }
 
-.quantity {
+
+/*.quantity {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
     margin-top: 1rem;
 }
+*/
 
 .dish {
     background: url(../img/pizza-2000602_1920.jpg);
@@ -65,7 +67,8 @@
     clear: both;
 }
 
-.small {
+
+/*.small {
     border: none;
     width: 100px;
     height: 100px;
@@ -87,3 +90,4 @@
     font-size: 2.4rem;
     margin: 0 0.7rem;
 }
+*/

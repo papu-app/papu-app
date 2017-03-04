@@ -1,8 +1,9 @@
 /* IMPORT STYLESHEETS */
+
 @import "rs.css";
 
-
 /* STYLE */
+
 html {
     font-size: 160%;
 }
@@ -35,6 +36,7 @@ body {
     background-color: rgba(255, 255, 255, 0.15);
     color: #ffe062;
     height: 5.7vh;
+    min-height: 2rem;
     font-size: 1.3rem;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.35);
     padding: 0 5vw;
@@ -62,12 +64,11 @@ body {
     height: 7vh;
     margin: 0;
     cursor: pointer;
-    position: fixed;
     left: 5%;
     z-index: 999;
 }
 
-.title {
+span.title {
     margin: auto;
     text-transform: uppercase;
     font-size: 1.9rem;
@@ -110,7 +111,7 @@ body {
     width: 91vw;
 }
 
-.button {
+button.button {
     border-radius: 5px;
     box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.35);
     text-transform: uppercase;
@@ -127,19 +128,23 @@ body {
     height: 140px;
 }
 
-.button-yellow {
+button.button-yellow {
     background-color: rgba(255, 223, 98, 0.95);
     color: #000;
     border: none;
 }
 
-.button-black {
+button.button-black {
     background-color: #000;
     color: #ffe062;
     border: 3px solid #ffe062;
 }
 
-.content {
+button.short {
+    width: 48%;
+}
+
+section.content {
     padding: 5vw 5vw;
 }
 
@@ -248,10 +253,9 @@ nav a:hover {
 }
 
 .form-group input[type="text"] {
-    padding: 7px 0px;
+    padding: 1rem 0;
     font-family: 'Roboto';
     font-size: 1.5rem;
-    margin: 1%;
     width: 100%;
     background-color: transparent;
     border-bottom: 2px solid #fff;
