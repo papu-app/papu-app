@@ -2,7 +2,7 @@ div.dish-bg {
     background: url(../img/pizza-1x.jpg);
     width: 100%;
     height: 320px;
-    box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.35);
     box-sizing: border-box;
 }
 
@@ -31,14 +31,14 @@ div.gradient-right {
     padding: 1rem;
     box-sizing: border-box;
     height: 321px;
-    background: rgba(255, 93, 177, 0);
-    background: -moz-linear-gradient(left, rgba(255, 93, 177, 0) 0%, rgba(0, 0, 0, 0.39) 21%, rgba(0, 0, 0, 1) 54%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 93, 177, 0)), color-stop(21%, rgba(0, 0, 0, 0.39)), color-stop(54%, rgba(0, 0, 0, 1)));
-    background: -webkit-linear-gradient(left, rgba(255, 93, 177, 0) 0%, rgba(0, 0, 0, 0.39) 21%, rgba(0, 0, 0, 1) 54%);
-    background: -o-linear-gradient(left, rgba(255, 93, 177, 0) 0%, rgba(0, 0, 0, 0.39) 21%, rgba(0, 0, 0, 1) 54%);
-    background: -ms-linear-gradient(left, rgba(255, 93, 177, 0) 0%, rgba(0, 0, 0, 0.39) 21%, rgba(0, 0, 0, 1) 54%);
-    background: linear-gradient(to right, rgba(255, 93, 177, 0) 0%, rgba(0, 0, 0, 0.39) 21%, rgba(0, 0, 0, 1) 54%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ff5db1', endColorstr='#000000', GradientType=1);
+    background: rgba(255, 255, 255, 0);
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 57%, rgba(255, 255, 255, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(0%, rgba(255, 255, 255, 0)), color-stop(57%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(255, 255, 255, 1)));
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 57%, rgba(255, 255, 255, 1) 100%);
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 57%, rgba(255, 255, 255, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 57%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 57%, rgba(255, 255, 255, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1);
 }
 
 div.order-details {
@@ -53,7 +53,7 @@ section.delivery-data span {
 
 div.order-details p {
     margin-top: 0.75rem;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     line-height: 2rem;
 }
 
@@ -84,8 +84,8 @@ label.checkbox-remember-data-label {
 
 input.checkbox-remember-data + label.checkbox-remember-data-label:before {
     content: ' ';
-    background: #000;
-    border: 3px solid #fff;
+    background: #fff;
+    border: 4px solid #3a2431;
     border-radius: 30%;
     display: inline-block;
     vertical-align: middle;
@@ -101,13 +101,14 @@ div.checkbox1 label {
     margin-top: 1rem;
     display: flex;
     align-items: center;
-    color: #fff;
+    color: #3a2431;
+    font-weight: bold;
 }
 
 input.checkbox-remember-data:checked + .checkbox-remember-data-label:before {
     content: "\2713";
-    background: #000;
-    color: #ffe062;
+    background: #3a2431;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
