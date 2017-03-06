@@ -1,88 +1,88 @@
-    div.info {
-    font-size: 2rem;
-    background: #fff;
-    padding: 0 5vw;
-    margin-bottom: 1.5rem;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.35);
-}
-
-div.dish-name {
-    margin-bottom: 2rem;
-    float: left;
-    width: 70%;
-}
-
-div.restaurant {
-    float: left;
-    width: 70%;
-}
-
-div.ingredients {
-    clear: both;
-    width: 100%;
-}
-
-div.order-pic {
-    background: url(../img/order2-1x.jpg);
-    background-size: cover;
-    border-radius: 60px;
-    height: 200px;
-    width: 100%;
-    margin: 1.5rem 0;
-    box-sizing: border-box;
-}
-
-div.rating-container {
-    display: flex;
-    width: 30%;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-
-div.info-right {
-    float: right;
-    width: 30%;
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-div.info-left > p {
-    margin-bottom: 3rem;
-}
-
-section.dish {
-    height: calc(100vh - 16vh - 5.7vh);
-}
-
-@media (-webkit-min-device-pixel-ratio: 2) {
-    div.order-pic {
-        background: url(../img/order2-2x.jpg)
+        div.info {
+        font-size: 2rem;
+        background: #fff;
+        padding: 0 5vw;
+        margin-bottom: 1.5rem;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.35);
     }
-}
-
-@media (-webkit-min-device-pixel-ratio: 3) {
-    div.order-pic {
-        background: url(../img/order2-3x.jpg)
+    
+    div.dish-name {
+        margin-bottom: 2rem;
+        float: left;
+        width: 70%;
     }
-}
-
-div.gradient-top {
-    padding: 0 0 5vw 0;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    justify-content: space-between;
-    align-content: space-between;
-    box-sizing: border-box;
-}
-
-div.button-section {
-    padding: 0 5vw;
-}
-
-@media only screen and (orientation: landscape) {
+    
+    div.restaurant {
+        float: left;
+        width: 70%;
+    }
+    
+    div.ingredients {
+        clear: both;
+        width: 100%;
+    }
+    
+    div.order-pic {
+        background: url(../img/order2-1x.jpg);
+        background-size: cover;
+        border-radius: 40px;
+        height: 200px;
+        width: 100%;
+        margin: 1.5rem 0;
+        box-sizing: border-box;
+    }
+    
+    div.rating-container {
+        display: flex;
+        width: 30%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    div.info-right {
+        float: right;
+        width: 30%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    div.info-left > p {
+        margin-bottom: 3rem;
+    }
+    
     section.dish {
-        height: 100%;
+        height: calc(100vh - 16vh - 5.7vh);
     }
+    
+    @media (-webkit-min-device-pixel-ratio: 2) {
+        div.order-pic {
+            background: url(../img/order2-2x.jpg)
+        }
+    }
+    
+    @media (-webkit-min-device-pixel-ratio: 3) {
+        div.order-pic {
+            background: url(../img/order2-3x.jpg)
+        }
+    }
+    
+    div.gradient-top {
+        padding: 0 0 5vw 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        align-content: space-between;
+        box-sizing: border-box;
+    }
+    
+    div.button-section {
+        padding: 0 5vw;
+    }
+    
+    @media only screen and (orientation: landscape) {
+        section.dish {
+            height: 100%;
+        }
