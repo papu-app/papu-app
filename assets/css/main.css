@@ -195,8 +195,8 @@ span.title {
     border-radius: 50%;
     max-width: 200px;
     max-height: 200px;
-    background: #ffe062;
-    color: #000;
+    background: #3a2431;
+    color: #fff;
     font-size: 300%;
     text-align: center;
     line-height: 14vw;
@@ -213,7 +213,7 @@ span.title {
     color: #000;
     text-align: center;
     line-height: 8vw;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     display: inline-block;
 }
 
@@ -410,6 +410,7 @@ p {
     font-size: 1.6rem;
     font-weight: 300;
     line-height: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 h3 {
