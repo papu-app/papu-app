@@ -217,44 +217,38 @@ span.title {
     display: inline-block;
 }
 
-.short {
-    width: 45vw;
-}
 
-.long {
-    width: 91vw;
-}
-
-button.button {
+.button {
     border-radius: 5px;
     box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.35);
     text-transform: uppercase;
     font-family: 'Signika Negative', sans-serif;
-    font-size: 1.1rem;
     text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
     cursor: pointer;
     width: 100%;
     margin-bottom: 1.2rem;
     font-size: 1.5rem;
     height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
-button.button-yellow {
+.button-yellow {
     background-color: #3a2431;
     color: #fff;
     border: none;
 }
 
-button.button-black {
+.button-black {
     background-color: #fff;
     color: #3a2431;
     font-weight: 700;
     border: 4px solid #3a2431;
 }
 
-button.short {
+.short {
     width: 48%;
 }
 

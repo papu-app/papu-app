@@ -182,3 +182,42 @@ div.quantity p {
     margin: 0 0.7rem;
     font-size: 2rem;
 }
+
+div.modalDialog {
+    position: fixed;
+    top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	min-width: 400px;
+    width: 66%;
+	position: relative;
+	margin: 50% auto;
+	padding: 4rem 1rem 1rem;
+	border-radius: 10px;
+    background: #fff;
+/*	background: #3a2431;*/
+/*    color: #fff;*/
+    box-shadow: 3px 3px 20px #000;
+    text-align: center;
+}
+
+.modal-footer {display: flex;
+justify-content: center;
+    padding-top: 1.5rem
+}
