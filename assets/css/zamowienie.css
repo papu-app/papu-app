@@ -189,7 +189,7 @@ div.modalDialog {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: rgba(0,0,0,0.8);
+	background: rgba(0,0,0,0.9);
 	z-index: 99999;
 	opacity:0;
 	-webkit-transition: opacity 400ms ease-in;
@@ -205,18 +205,22 @@ div.modalDialog {
 
 .modalDialog > div {
 	min-width: 400px;
-    width: 66%;
+    width: 70%;
 	position: relative;
 	margin: 50% auto;
-	padding: 4rem 1rem 1rem;
+	padding: 1.5rem 2.5rem;
 	border-radius: 10px;
     background: #fff;
-/*	background: #3a2431;*/
+/*	background: #3a2431; */
 /*    color: #fff;*/
-    box-shadow: 3px 3px 20px #000;
-    text-align: center;
+    box-shadow: 0px 0px 20px #000;
+/*    text-align: center;*/
 }
 
+.modal-header {
+    text-transform: uppercase;
+    padding: 1.5rem 0;
+}
 .modal-footer {display: flex;
 justify-content: center;
     padding-top: 1.5rem
