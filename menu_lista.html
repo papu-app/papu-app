@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pl">
-
 <head>
     <meta charset="UTF-8">
     <title>Papu</title>
@@ -9,7 +8,6 @@
     <link rel="stylesheet" href="assets/css/rs.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
 </head>
-
 <body>
     <section class="bar">
         <div class="bar-top">
@@ -53,12 +51,109 @@
             </nav>
             <img src="assets/img/logo_papu.svg" alt="Papu" class="logo" />
         </div>
+        
+        
         <div class="bar-bottom">
             <img src="assets/img/arrow-left.svg" alt="Wstecz" class="arrow-left" />
             <span class="title">Menu</span>
+            <div class="arrowupdownbox">
+                <span class="arrowupdown">
+                <span></span>
+                <span></span>
+                </span>
+            </div>       
         </div>
+        <div class="updownpanel">
+              <div class="darkerpanel">
+               <div class="panel">
+                <div class="input-left-block">
+                   <span class="white title-padding">Rodzaje dań</span>
+                    
+                    <div class="checkboxcell">
+                    <input id="bezglutenowe" class="checkbox-menu-list"
+                    type="checkbox"/>
+                    <label for="bezglutenowe" class="checkbox-menu-list-label">bezglutenowe</label>
+                    </div>
+  
+                    <div class="checkboxcell">
+                    <input id="weganskie" class="checkbox-menu-list"
+                    type="checkbox"/>
+                    <label for="weganskie" class="checkbox-menu-list-label">wegańskie</label>
+                    </div>
+                    
+                    <div class="checkboxcell">
+                    <input id="niskotluszczowe" class="checkbox-menu-list"
+                    type="checkbox"/>
+                    <label for="niskotluszczowe" class="checkbox-menu-list-label">niskotłuszczowe</label>
+                    </div>
+                   
+                   <div class="checkboxcell">
+                    <input id="bez_laktozy" class="checkbox-menu-list"
+                    type="checkbox"/>
+                    <label for="bez_laktozy" class="checkbox-menu-list-label">bez laktozy</label>
+                    </div>
+                    
+                    <br />
+                    
+                    
+                  <span class="white title-padding">Alergeny</span>
+                  <span class="white xs-text">(szukaj dań bez tych składników)</span>    
+                    <div class="checkboxcell">
+                    <input id="jajka" class="checkbox-menu-list"
+                    type="checkbox"/>
+                    <label for="jajka" class="checkbox-menu-list-label">jajka</label>
+                    </div>
+  
+                    <div class="checkboxcell">
+                    <input id="sezam" class="checkbox-menu-list"
+                    type="checkbox"/>
+                    <label for="sezam" class="checkbox-menu-list-label">sezam</label>
+                    </div>
+                    
+                    <div class="checkboxcell">
+                    <input id="soja" class="checkbox-menu-list"
+                    type="checkbox"/>
+                    <label for="soja" class="checkbox-menu-list-label">soja</label>
+                    </div>
+                   
+                   <div class="checkboxcell">
+                    <input id="laktoza" class="checkbox-menu-list"
+                    type="checkbox"/>
+                    <label for="laktoza" class="checkbox-menu-list-label">laktoza</label>
+                    </div>
+  
+            </div> 
+            
+            <div class="input-right-block">
+                 <span class="white title-padding">Rodzaj kuchni</span>
+                    <div class="checkboxcell">
+                    <input id="japonska" class="checkbox-menu-list"
+                    type="checkbox"/>
+                    <label for="japonska" class="checkbox-menu-list-label">japońska</label>
+                    </div>
+  
+                    <div class="checkboxcell">
+                    <input id="polska" class="checkbox-menu-list"
+                    type="checkbox"/>
+                    <label for="polska" class="checkbox-menu-list-label">polska</label>
+                    </div>
+                    
+                    <div class="checkboxcell">
+                    <input id="wloska" class="checkbox-menu-list"
+                    type="checkbox"/>
+                    <label for="wloska" class="checkbox-menu-list-label">włoska</label>
+                    </div>
+            
+                   <div class="checkboxcell">
+                    <input id="francuska" class="checkbox-menu-list"
+                    type="checkbox"/>
+                    <label for="francuska" class="checkbox-menu-list-label">francuska</label>
+                    </div>
+            </div>
+            </div>
+            </div>
     </section>
-    <!-- Menu lista -->
+    
     <section class="menulista">
         <!-- Menu item 1-->
         <div class="menuitem1">
@@ -68,38 +163,29 @@
                         <p><span class="name">Burger</span> / 420g</p>
                         <p class="italic">bułka maślana, burger wołowy, sałata, cebula, rukola, sos majonezowo-musztardowy, burak</p>
                     </div>
-                    <div class="mitem-inforight">
-                        <div class="mitem-arrowright">
                             <img src="assets/img/right.svg" alt="Następny" class="right-arrow">
-                        </div>
                         <div class="mitem-price mitem-right">
                             <span class="name">18,90 zł</span>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--Menu item end -->
-        <!-- Menu item 2-->
+        
         <div class="menuitem2">
             <div class="menuitemgradient">
                 <div class="menudescription">
                     <div class="mitem-infoleft">
                         <p><span class="name">Vege Pizza</span> / 370 g</p>
                         <p class="italic">mozzarella, pesto bazyliowe, szpinak, dynia karmelizowana, jajko, ser feta</p>
-                    </div>
-                    <div class="mitem-inforight">
-                        <div class="mitem-arrowright">
+                    </div>   
                             <img src="assets/img/right.svg" alt="Następny" class="right-arrow">
-                        </div>
                         <div class="mitem-price mitem-right">
                             <span class="name">29,90 zł</span>
                         </div>
-                    </div>
                 </div>
             </div>
         </div>
-        <!-- Menu item 3-->
+
         <div class="menuitem3">
             <div class="menuitemgradient">
                 <div class="menudescription">
@@ -107,18 +193,14 @@
                         <p><span class="name">Sałatka z kurczakiem</span> / 440g</p>
                         <p class="italic">sałata, kurczak, pomidory cherry, ogórek kiszony, czerwona cebula, sos</p>
                     </div>
-                    <div class="mitem-inforight">
-                        <div class="mitem-arrowright">
-                            <img src="assets/img/right.svg" alt="Następny" class="right-arrow">
-                        </div>
+                        <img src="assets/img/right.svg" alt="Następny" class="right-arrow">  
                         <div class="mitem-price mitem-right">
                             <span class="name">29,90 zł</span>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Menu item 4-->
+
         <div class="menuitem1">
             <div class="menuitemgradient">
                 <div class="menudescription">
@@ -126,40 +208,16 @@
                         <p><span class="name">Burger</span> / 420g</p>
                         <p class="italic">bułka maślana, burger wołowy, sałata, cebula, rukola, sos majonezowo-musztardowy, burak</p>
                     </div>
-                    <div class="mitem-inforight">
-                        <div class="mitem-arrowright">
-                            <img src="assets/img/right.svg" alt="Następny" class="right-arrow">
-                        </div>
+                        <img src="assets/img/right.svg" alt="Następny" class="right-arrow">
                         <div class="mitem-price mitem-right">
                             <span class="name">18,90 zł</span>
                         </div>
-                    </div>
                 </div>
             </div>
         </div>
-        <!--Menu item end -->
     </section>
-    <!--
-    <section class="content">
-        
-        <div class="rating">4.7</div>
-        <button class="button-yellow">Zamów i zapłać</button><br>
-        <button class="button-black">Anuluj</button>
-        <button class="button-yellow">Zamawiam</button><br>
-        
-        <div class="form-group">
-            <label>Email address</label>
-            <input type="text" class="form-control">
-        </div>
-       
-       <img src="assets/img/left.svg" alt="Wstecz" class="arrow"/> 
-       
-       <img src="assets/img/right.svg" alt="Nastepny" class="arrow"/> 
-        
-    </section>
--->
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
-
 </html>

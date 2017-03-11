@@ -21,6 +21,18 @@ $(function() {
     $(".menu").click(function() {
         $("nav").toggleClass('active');
         $("label").toggleClass('active');
-        $("section").toggleClass('active');
+        $("section.bar").toggleClass('active');
+    });
+});
+
+/* animacja arrowupdown */
+$('.arrowupdown').on('click', function() {
+    $(this).toggleClass('active');
+});
+
+/* wysuwanie panelu menu */
+$(function() {
+    $(".arrowupdownbox").click(function() {
+        $(".updownpanel").toggleClass('active');
     });
 });
