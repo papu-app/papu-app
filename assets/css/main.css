@@ -359,8 +359,8 @@ div.updownpanel {
     background-image: url(../img/menu-bg.jpg);
     background-size: cover;
     background-repeat: repeat-y;
-    border-bottom: 5px;
-    border-bottom-color: white;
+    border-bottom: 15px;
+    border-bottom-color: #ffdf62;
     border-bottom-style: solid;
 }
 
