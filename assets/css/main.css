@@ -60,6 +60,7 @@ img.rice {
     height: 82px;
     position: relative;
     top: 1rem;
+    z-index: -1;
 }
 
 img.logo {
@@ -216,7 +217,6 @@ span.title {
     font-size: 1.8rem;
     display: inline-block;
 }
-
 
 .button {
     border-radius: 5px;

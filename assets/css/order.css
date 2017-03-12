@@ -1,88 +1,61 @@
-        div.info {
-        font-size: 2rem;
-        background: #fff;
-        padding: 0 5vw;
-        margin-bottom: 1.5rem;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.35);
+    div.info-left {
+    float: left;
+    width: 80%;
+    font-size: 1.6rem;
+}
+
+div.dish-name {
+    margin-bottom: 2rem;
+}
+
+div.info-right {
+    float: right;
+    width: 20%;
+    text-align: right;
+}
+
+div.info-left > p {
+    margin-bottom: 3rem;
+}
+
+section.dish {
+    background: url(../img/pizza-2000602_1920.jpg);
+    background-size: cover;
+    height: calc(100vh - 16vh - 5.7vh);
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+    .dish {
+        background: url(../img/pizza-2000602_1920@2x.jpg);
     }
-    
-    div.dish-name {
-        margin-bottom: 2rem;
-        float: left;
-        width: 70%;
+}
+
+@media (-webkit-min-device-pixel-ratio: 3) {
+    .dish {
+        background: url(../img/pizza-2000602_1920@3x.jpg);
     }
-    
-    div.restaurant {
-        float: left;
-        width: 70%;
-    }
-    
-    div.ingredients {
-        clear: both;
-        width: 100%;
-    }
-    
-    div.order-pic {
-        background: url(../img/order2-1x.jpg);
-        background-size: cover;
-        border-radius: 40px;
-        height: 200px;
-        width: 100%;
-        margin: 1.5rem 0;
-        box-sizing: border-box;
-    }
-    
-    div.rating-container {
-        display: flex;
-        width: 30%;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-    }
-    
-    div.info-right {
-        float: right;
-        width: 30%;
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-    
-    div.info-left > p {
-        margin-bottom: 3rem;
-    }
-    
+}
+
+div.gradient-top {
+    margin-top: -1px;
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.82);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.82) 0%, rgba(255, 255, 255, 0.69) 35%, rgba(255, 255, 255, 0.69) 66%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.82)), color-stop(35%, rgba(255, 255, 255, 0.69)), color-stop(66%, rgba(255, 255, 255, 0.69)), color-stop(100%, rgba(255, 255, 255, 0)));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.82) 0%, rgba(255, 255, 255, 0.69) 35%, rgba(255, 255, 255, 0.69) 66%, rgba(255, 255, 255, 0) 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0.82) 0%, rgba(255, 255, 255, 0.69) 35%, rgba(255, 255, 255, 0.69) 66%, rgba(255, 255, 255, 0) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.82) 0%, rgba(255, 255, 255, 0.69) 35%, rgba(255, 255, 255, 0.69) 66%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.82) 0%, rgba(255, 255, 255, 0.69) 35%, rgba(255, 255, 255, 0.69) 66%, rgba(255, 255, 255, 0) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff ', endColorstr='#ffffff ', GradientType=0);
+}
+
+@media only screen and (orientation: landscape) {
     section.dish {
-        height: calc(100vh - 16vh - 5.7vh);
-    }
-    
-    @media (-webkit-min-device-pixel-ratio: 2) {
-        div.order-pic {
-            background: url(../img/order2-2x.jpg)
-        }
-    }
-    
-    @media (-webkit-min-device-pixel-ratio: 3) {
-        div.order-pic {
-            background: url(../img/order2-3x.jpg)
-        }
-    }
-    
-    div.gradient-top {
-        padding: 0 0 5vw 0;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
         height: 100%;
-        justify-content: space-between;
-        align-content: space-between;
-        box-sizing: border-box;
     }
-    
-    div.button-section {
-        padding: 0 5vw;
-    }
-    
-    @media only screen and (orientation: landscape) {
-        section.dish {
-            height: 100%;
-        }
