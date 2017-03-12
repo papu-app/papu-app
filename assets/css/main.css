@@ -60,6 +60,7 @@ img.rice {
     height: 82px;
     position: relative;
     top: 1rem;
+    z-index: -1;
 }
 
 img.logo {
