@@ -1,4 +1,4 @@
-    div.info-left {
+div.info-left {
     float: left;
     width: 80%;
     font-size: 1.6rem;
@@ -59,3 +59,8 @@ div.gradient-top {
     section.dish {
         height: 100%;
     }
+}
+
+a {
+    text-decoration: none;
+}
