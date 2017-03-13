@@ -22,7 +22,6 @@ section.delivery-data {
     display: block;
     margin-top: 0rem;
     box-sizing: border-box;
-    display: flex;
     width: 100%;
     padding: 0 5vw 5vh 5vw;
 }
@@ -61,7 +60,7 @@ div.sum {
     float: right;
     text-align: right;
     font-size: 1.8rem;
-    margin: 1.5rem;
+    margin: 1rem 1.5rem;
 }
 
 
@@ -186,13 +185,16 @@ div.quantity p {
     font-size: 3rem;
 }
 
+
+/*modal start */
+
 div.modalDialog {
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.8);
     z-index: 99999;
     opacity: 0;
     -webkit-transition: opacity 400ms ease-in;
@@ -229,4 +231,19 @@ div.modalDialog {
     display: flex;
     justify-content: center;
     padding-top: 1.5rem
+}
+
+
+/*modal stop */
+
+.form {
+    background: #fff;
+    padding: 3rem;
+}
+
+.form label {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #76405e;
+    margin: 0.5rem 0 0;
 }

@@ -99,36 +99,45 @@
      </span>
         </div>
     </section>
-    <section class="delivery-data">
-        <div>
-            <span>Dane dostawy</span>
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="Imię">
-                <input type="text" class="form-control" placeholder="Nazwisko">
-                <input type="text" class="form-control" placeholder="Ulica">
-                <input type="text" class="form-control" placeholder="Miasto">
-                <input type="text" class="form-control" placeholder="Kod pocztowy">
-                <div class="checkbox1">
-                    <input id="remember" class="checkbox-remember-data" name="checkbox-1" type="checkbox">
-                    <label for="remember" class="checkbox-remember-data-label">&nbsp; Zapamiętaj moje dane
-                    </label>
+    <section class="content">
+        <section class="delivery-data">
+            <div class="form">
+                <span>Dane dostawy</span>
+                <div class="form-group">
+                    <label for="name">Imię i nazwisko</label>
+                    <input type="text" class="form-control" id="name" placeholder="np. Jan Kowalski" value="Anna Piskorz">
+                    <label for="street">Adres</label>
+                    <input type="text" class="form-control" id="street" placeholder="np. Kwiatowa 10/34" value="ul. Zieleniecka 63/12">
+                    <label for="city">Miasto</label>
+                    <input type="text" class="form-control" id="city" placeholder="np. Warszawa" value="Warszawa">
+                    <label for="zipCode">Kod pocztowy</label>
+                    <input type="text" class="form-control" id="zipCode" placeholder="xx-xxx" value="07-015">
+                    <label for="phone">Telefon</label>
+                    <input type="text" class="form-control" id="phone" value="501123456">
+                    <div class="checkbox1">
+                        <input id="remember" class="checkbox-remember-data" name="checkbox-1" type="checkbox">
+                        <label for="remember" class="checkbox-remember-data-label">&nbsp; Zapamiętaj moje dane
+                        </label>
+                    </div>
                 </div>
-                <div class="mini-button-section">
-                    <button class="short button button-black">Anuluj</button>
-                    <a class="short button button-yellow" href="#openModal">Zamawiam</a>
-                </div>
-                <div id="openModal" class="modalDialog">
-                    <div>
-                        <div class="modal-header">
-                            <h3>Zamówienie</h3></div>
-                        <div class="modal-content">
-                            <p>Twoje zamówienie zostało pomyślnie zlecone do realizacji.</p>
-                            <p>Możesz podejrzeć jego status w zakładce "Moje zamówienia".</p>
-                            <div class="modal-footer"><a class="button short button-black" href="#">Ok</a>
-                            </div>
+            </div>
+            <div class="mini-button-section">
+                <button class="short button button-black">Anuluj</button>
+                <a class="short button button-yellow" href="#openModal">Zamawiam</a>
+            </div>
+            <div id="openModal" class="modalDialog">
+                <div>
+                    <div class="modal-header">
+                        <h3>Zamówienie</h3></div>
+                    <div class="modal-content">
+                        <p>Twoje zamówienie zostało pomyślnie zlecone do realizacji.</p>
+                        <p>Możesz podejrzeć jego status w zakładce "Moje zamówienia".</p>
+                        <div class="modal-footer"><a class="button short button-black" href="#">Ok</a>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="assets/js/ordering.js"></script>

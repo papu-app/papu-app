@@ -1,75 +1,68 @@
-.profile-pic{
-
+.profile-pic {
     width: 351px;
-	height: 351px;
+    height: 351px;
+    z-index: 99;
+    position: relative;
 }
 
-.img-camera{
-    background:  #f2d45d url("../img/camera.svg") no-repeat center center;
-    background-size:40px 36px;
+.img-camera {
+    background: #f2d45d url("../img/camera.svg") no-repeat center center;
+    background-size: 40px 36px;
     border-radius: 50%;
-	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.35);
-	width: 96px;
-	height: 96px;
-	position: absolute;
-	top:0;
-	right: 0;
-	
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.35);
+    width: 96px;
+    height: 96px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999;
 }
 
-.container {
-	position: relative;
-	width: 351px;
-	margin: 0 auto;
-
+.photo {
+    position: relative;
+    width: 351px;
+    margin: 0 auto;
 }
 
 .main-profile-data {
-	padding: 2rem 0;
-	width: 600px;
-	line-height: 1.4rem;
-	margin: 0 auto;
-	
-	}
-
-.profile-caption {
-
-	font-family: Roboto;
-	color:  #ffdf62;
-	font-size: 1rem;/* Approximation due to font substitution */
-	font-weight: 300;
-	line-height: 1.6;/* Approximation due to font substitution */
-	text-align: left;
-
-}	
-
-.background-for-profile{
-	background-color: #fff;
-	opacity: 3%;
-	padding: 3em;
-	position: relative;
-	width: 450px;
-
-    margin-top: 2.4rem;
+    padding: 2rem 0;
+    width: 80%;
+    line-height: 1.4rem;
+    margin: 0 auto;
 }
 
+.profile-caption {
+    font-family: Roboto;
+    color: #ffdf62;
+    font-size: 1rem;
+    /* Approximation due to font substitution */
+    font-weight: 300;
+    line-height: 1.6;
+    /* Approximation due to font substitution */
+    text-align: left;
+}
+
+.background-for-profile {
+    background-color: #fff;
+    opacity: 3%;
+    padding: 3em;
+    position: relative;
+    margin-top: -2rem;
+}
 
 h3 {
     font-size: 1.2rem;
     font-weight: 500;
-    color: #f0ce53;
-
-
+    color: #76405e;
 }
 
-hr { 
-	size: 0.5px;
+hr {
+    size: 0.5px;
     display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-top: -1rem;
+    margin-bottom: 1em;
     margin-left: auto;
     margin-right: auto;
     border-style: inset;
     border-width: 1px;
-} 
-
+}
