@@ -24,3 +24,15 @@ $(function() {
         $("section").toggleClass('active');
     });
 });
+
+/* animacja arrowupdown */
+$('.arrowupdown').on('click', function() {
+    $(this).toggleClass('active');
+});
+
+/* wysuwanie panelu wyboru potrawy */
+$(function() {
+    $(".arrowupdownbox").click(function() {
+        $(".updownpanel").toggleClass('active');
+    });
+});
