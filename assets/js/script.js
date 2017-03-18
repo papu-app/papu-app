@@ -36,3 +36,16 @@ $(function() {
         $(".updownpanel").toggleClass('active');
     });
 });
+
+$(document).ready(function() {
+    $('.search').click(function() {
+        $('.updownpanel').removeClass('active');
+        $('.arrowupdown').removeClass('active');
+        $('.loader-box').toggleClass('active');
+        $('.menulista').toggleClass('hidden');
+        setTimeout(function() {
+            $('.menulista').removeClass('hidden');
+            $('.loader-box').removeClass('active');
+        }, 1100);
+    });
+});

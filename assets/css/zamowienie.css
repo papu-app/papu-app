@@ -4,6 +4,7 @@ div.dish-bg {
     height: 320px;
     box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.35);
     box-sizing: border-box;
+    margin-bottom: 3px;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2) {
@@ -41,8 +42,7 @@ div.gradient-right {
 }
 
 div.order-details {
-    width: 60%;
-    margin-left: 30%;
+    width: 85%;
 }
 
 div.order-details,
@@ -156,12 +156,15 @@ div.quantity {
     align-items: center;
     justify-content: space-around;
     height: 100%;
-    /*   width: 20%;
-*/
 }
 
 div.order-flex {
     display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    height: 100%;
+    width: 70%;
+    margin-left: 30%;
 }
 
 button.small {
