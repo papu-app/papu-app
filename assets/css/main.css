@@ -391,42 +391,6 @@ nav a:hover {
 }
 
 
-/* starter screen*/
-
-.welcome {
-    /*
-    width: 100vh;
-    height: 100vh;
-*/
-    background: url(../img/food.svg);
-    background-repeat: repeat-y;
-    background-blend-mode: multiply;
-    background-color: #3a2431;
-}
-
-div.welcomepapu {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-img.welcomerice {
-    width: 184px;
-    height: 182px;
-    position: relative;
-    top: 1rem;
-    /*    z-index: -1;*/
-}
-
-img.welcomelogo {
-    height: 220px;
-    /*    margin: auto;*/
-    -webkit-filter: drop-shadow( 2px 2px 10px #000);
-    filter: drop-shadow( 2px 2px 10px #000);
-}
-
-
 /*main_lista style*/
 
 
