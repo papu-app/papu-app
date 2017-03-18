@@ -188,6 +188,10 @@ span.title {
         height: 13%;
         /*width: 13vw;*/
     }
+    div.updownpanel.active {
+        height: 1100px;
+        top: 44vh;
+    }
 }
 
 .rating {
