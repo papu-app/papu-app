@@ -631,46 +631,6 @@ input.checkbox-menu-list:focus + .checkbox-menu-list-label {
     }
 }
 
-.menuitemgradient {
-    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 2%, rgba(255, 255, 255, 0.65) 45%, rgba(255, 255, 255, 1) 100%);
-    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 2%, rgba(255, 255, 255, 0.65) 45%, rgba(255, 255, 255, 1) 100%);
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 2%, rgba(255, 255, 255, 0.65) 45%, rgba(255, 255, 255, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=0);
-    border-bottom: 2px;
-    border-bottom-color: #3a2431;
-    border-bottom-style: solid;
-    height: 480px;
-}
-
-.menudescription {
-    padding: 5vw;
-}
-
-.mitem-infoleft {
-    float: left;
-    width: 70%;
-    font-size: 1.6rem;
-    font-weight: 300;
-    padding-top: 7vh;
-}
-
-.right-arrow {
-    height: 5vh;
-    cursor: pointer;
-    margin-top: 8vh;
-    margin-left: 9vh;
-    padding: 10px;
-}
-
-.mitem-price {
-    padding-top: 5vh;
-    padding-left: 1vh;
-}
-
-.mitem-right {
-    text-align: right;
-}
-
 
 /*----------------typografia--------------------*/
 
@@ -761,21 +721,10 @@ span.restaurant {
 
 div.menuitem2 {
     background: url(../img/beef-1845296_1920.jpg);
-    width: 100%;
-    height: 320px;
-    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.35);
-    box-sizing: border-box;
-    overflow: hidden;
-    margin-bottom: 2px;
 }
 
 div.menuitem3 {
-    background-image: url(../img/salad-1264107_1920.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.35);
-    min-height: 320px;
-    margin-bottom: 2px;
+    background: url(../img/salad-1264107_1920.jpg);
 }
 
 .menulista a {
@@ -817,7 +766,8 @@ div.menuitem3 {
 }
 
 .menulista.hidden {
-    display: none;
+    display: none
+;
 }
 
 @keyframes spin {
@@ -827,4 +777,37 @@ div.menuitem3 {
     100% {
         transform: rotate(360deg);
     }
+}
+
+.enter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+}
+
+div.entry-logo {
+    /*background: url("../img/bg3x.jpg") center;*/
+    height: 100%;
+    width: 70%;
+    background: #3a2431;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.entry-papu {
+    -webkit-filter: drop-shadow( 2px 2px 10px #000);
+    filter: drop-shadow( 2px 2px 20px #000);
+    width: 70%;
+    position: relative;
+    top: -1rem;
+}
+
+.entry-rice {
+    position: relative;
+    width: 33%;
+    top: 2rem;
 }

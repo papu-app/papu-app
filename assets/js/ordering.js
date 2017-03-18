@@ -9,7 +9,7 @@
 
 
    $('.minus').click(function subtract() {
-       if (counter > 0) {
+       if (counter > 1) {
            number.text(--counter);
        }
    })
