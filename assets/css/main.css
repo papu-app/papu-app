@@ -156,12 +156,19 @@ div.menu.open span:nth-child(3) {
 
 /* koniec animacji hamburgera */
 
-span.title {
+.title {
     margin: auto;
     text-transform: uppercase;
     font-size: 1.4rem;
     font-weight: 500;
     color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+#search-icon {
+    margin-left: 30px;
+    height: 50px;
 }
 
 
@@ -413,8 +420,8 @@ div.updownpanel {
     -o-transition: all 300ms ease-in;
     transition: all 300ms ease-in;
     background-color: #3a2431;
-    z-index: 990;
-    /*background-color: #76405e;*/
+    z-index: 990
+;
 }
 
 div.updownpanel div.panel {
@@ -523,59 +530,6 @@ input.checkbox-menu-list:focus + .checkbox-menu-list-label {
 
 
 /* END checkbox style */
-
-
-/*START arrow up-down style*/
-
-.arrowupdownbox {
-    width: 3rem;
-    height: 3rem;
-    position: absolute;
-    margin: 0 0 0 21rem;
-}
-
-.arrowupdown {
-    width: .7rem;
-    height: .3rem;
-    display: inline-block;
-    position: relative;
-}
-
-.arrowupdown span {
-    top: 0.5rem;
-    position: absolute;
-    width: 1.8rem;
-    height: .3rem;
-    background-color: #ffffff;
-    display: inline-block;
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-}
-
-.arrowupdown span:first-of-type {
-    left: 1rem;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-}
-
-.arrowupdown span:last-of-type {
-    right: -1rem;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-.arrowupdown.active span:first-of-type {
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-.arrowupdown.active span:last-of-type {
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-}
-
-
-/*END arrow updown style*/
 
 @media (-webkit-min-device-pixel-ratio: 2) {
     .menuitem2 {
